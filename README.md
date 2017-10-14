@@ -1,6 +1,6 @@
 # my-first-pipeline
 
-A continuous delivery pipeline for FIXME
+A continuous delivery pipeline for my POC
 
 ## Usage
 
@@ -19,6 +19,4 @@ A continuous delivery pipeline for FIXME
 * `/resources/`
     * `logback.xml` contains a sample log configuration
 
-## References
 
-* for a more detailed example, look at the [example pipeline](https://github.com/flosell/lambdacd/tree/master/src/todopipeline) in the main LambdaCD project
