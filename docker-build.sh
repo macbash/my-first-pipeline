@@ -1,2 +1,3 @@
 #!/bin/bash
-docker build -t macbash-appfuse .
+source /tmp/gitrevision
+docker build -t appfuse:${commitid} .

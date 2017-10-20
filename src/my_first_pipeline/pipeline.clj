@@ -10,9 +10,13 @@
     clean-up-source
     clean-up-project
     clone
+    get-revision
     mvn-stage1
     mvn-test
     mvn-clean
     mvn-package
     docker-build
-    docker-push))
+    docker-push
+    ecs-task-definition-gen
+   ecs-task-revision-update-service))
+

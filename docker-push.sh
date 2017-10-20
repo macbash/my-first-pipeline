@@ -1,4 +1,7 @@
 #!/bin/bash
+## source gitrevision file to get commit id details
+source /tmp/gitrevision
+
 ecr_repo="533678591672.dkr.ecr.us-east-1.amazonaws.com"
 
 ## AWS ECR Login
@@ -8,6 +11,6 @@ echo `eval ${aws_ecr_access}`
 
 ## Docker Image Tag & Push 
 
-docker tag macbash-appfuse:latest ${ecr_repo}/appfuse:latest
+docker tag appfuse:${commitid} ${ecr_repo}/appfuse:${commitid}
 
-docker push ${ecr_repo}/appfuse:latest
+docker push ${ecr_repo}/appfuse:${commitid}
